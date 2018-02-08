@@ -2,7 +2,7 @@ x = 1
 while x <= 100
 	if x % 3 == 0
 		p "mined"
-	elsif x == 5
+	elsif x % 5 == 0
 		p "minds"
 			
 	else

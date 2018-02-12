@@ -1,5 +1,5 @@
-x = 1
-while x <= 100
+x = 0
+100.times do
 	if 	x % 3 == 0 && x % 5 == 0
 		p "mined minds"
 	elsif x % 3 == 0
@@ -9,6 +9,7 @@ while x <= 100
 			
 	else
 	p x
-end
+
 	x += 1
+end
 end

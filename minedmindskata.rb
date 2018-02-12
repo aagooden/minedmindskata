@@ -1,4 +1,4 @@
-x = 0
+x = 1
 100.times do
 	if 	x % 3 == 0 && x % 5 == 0
 		p "mined minds"
@@ -10,6 +10,6 @@ x = 0
 	else
 	p x
 
-	x += 1
 end
+	x += 1
 end

@@ -1,14 +1,13 @@
-x = 1
-100.times do
+for x in 1..100
 	if 	x % 3 == 0 && x % 5 == 0
-		p "mined minds"
+		print "mined minds\n"
 	elsif x % 3 == 0
-		p "mined"
+		print "mined\n"
 	elsif x % 5 == 0
-		p "minds"
+		print "minds\n"
 			
-	else
-	p x
+    else
+		p x
 
 end
 	x += 1

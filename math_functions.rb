@@ -19,16 +19,16 @@ def multiply(x,y)
 	x * y
 end
 
-p "Enter you first number"
+puts "Enter you first number"
 num1 = gets.chomp
 num1 = num1.to_f
 
-p "Enter your second number"
+puts "Enter your second number"
 num2 = gets.chomp
 num2 = num2.to_f
 
-p add(num1,num2)
-p subtract(num1,num2)
-p divide(num1,num2)
-p multiply(num1,num2)
+puts "#{num1} + #{num2} = #{add(num1,num2)}"
+puts "#{num1} - #{num2} = #{subtract(num1,num2)}"
+puts "#{num1} / #{num2} = #{divide(num1,num2)}"
+puts "#{num1} * #{num2} = #{multiply(num1,num2)}"
 

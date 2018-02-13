@@ -1,11 +1,11 @@
 for x in 1..100
 	if 	x % 3 == 0 && x % 5 == 0
-		print "mined minds\n"
+		puts "mined minds"
 	elsif x % 3 == 0
-		print "mined\n"
+		puts "mined"
 	elsif x % 5 == 0
-		print "minds\n"	
+		puts "minds"	
     else
-		p x
-end
+		puts x
+	end
 end

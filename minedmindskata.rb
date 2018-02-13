@@ -4,11 +4,8 @@ for x in 1..100
 	elsif x % 3 == 0
 		print "mined\n"
 	elsif x % 5 == 0
-		print "minds\n"
-			
+		print "minds\n"	
     else
 		p x
-
 end
-	x += 1
 end

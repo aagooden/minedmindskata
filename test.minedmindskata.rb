@@ -23,5 +23,9 @@ class Addition_test < Minitest::Test
 		assert_equal("minds", minedminds(5))
 	end
 
+	def test_5_and_3_returns_mined_minds
+		assert_equal("mined minds", minedminds(15))
+	end
+
 
 end

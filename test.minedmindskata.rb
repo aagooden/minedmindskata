@@ -31,6 +31,10 @@ class Addition_test < Minitest::Test
 		assert_equal("mined minds", minedminds(60))
 	end
 
+	def test_30_returns_mined_minds
+		assert_equal("mined minds", minedminds(30))
+	end
+
 	def test_10_returns_minds
 		assert_equal("minds", minedminds(10))
 	end

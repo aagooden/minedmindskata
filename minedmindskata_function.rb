@@ -11,5 +11,17 @@ def minedminds(x)
 	end
 end
 
+def array_create()
+	minds = Array.new
+
+	for num in (1..100)
+		minds << (minedminds(num))
+	end
+	return minds
+end
+
+minds = array_create()
+print minds 
+
 
 

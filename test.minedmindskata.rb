@@ -55,4 +55,10 @@ class Addition_test < Minitest::Test
 		assert_equal(77, minedminds(77))
 	end
 
+	def test_array
+		array = array_create()
+		assert_equal(Array, array.class)
+	end
+
+
 end

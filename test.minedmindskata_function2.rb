@@ -60,5 +60,21 @@ class Addition_test < Minitest::Test
 		assert_equal(Array, array.class)
 	end
 
+	def test_array_length_equals_100
+		array_test = array_create()
+		assert_equal(100, array_test.length)
+	end
+
+	def test_array_position_2_is_mined
+		array_test = array_create()
+		test = array_test[2]
+		assert_equal("mined", test)
+	end
+
+	def test_array_position_4_is_minds
+		array_test = array_create()
+		test = array_test[4]
+		assert_equal("minds", test)
+	end
 
 end

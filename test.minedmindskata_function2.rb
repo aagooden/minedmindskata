@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "minedmindskata_function.rb"
+require_relative "minedmindskata_function2.rb"
 
 class Addition_test < Minitest::Test
 
@@ -65,16 +65,28 @@ class Addition_test < Minitest::Test
 		assert_equal(100, array_test.length)
 	end
 
+	def test_array_create_length_equals_100
+		array_test = replace_nums()
+		assert_equal(100, array_test.length)
+	end
+
 	def test_array_position_2_is_mined
-		array_test = array_create()
+		array_test = replace_nums()
 		test = array_test[2]
 		assert_equal("mined", test)
 	end
 
 	def test_array_position_4_is_minds
-		array_test = array_create()
+		array_test = replace_nums()
 		test = array_test[4]
 		assert_equal("minds", test)
 	end
+
+	def test_array_position_14_is_minds
+		array_test = replace_nums()
+		test = array_test[14]
+		assert_equal("mined minds", test)
+	end
+
 
 end

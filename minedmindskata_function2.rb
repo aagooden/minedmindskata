@@ -15,21 +15,24 @@ def array_create()
 	return minds
 end
 
-def replace_nums(mindsarray)
+def replace_nums()
+	mindsarray = array_create()
 	for x in (0...mindsarray.length) do
 	num = mindsarray[x]
-		# if num % 3 == 0 && num % 5 == 0
-		# 	mindsarray[x] = "mined minds"
+		if num % 3 == 0 && num % 5 == 0
+			mindsarray[x] = "mined minds"
 		elsif num % 3 == 0
 			mindsarray[x] = "mined"
-		# elsif num % 5 == 0
-		# 	mindsarray[x] = "minds"
+		elsif num % 5 == 0
+			mindsarray[x] = "minds"
 		end
 	end
 	return mindsarray
 end
 
-minds = array_create()
-minds = replace_nums(minds)
-print minds 
+print replace_nums()
+
+# minds = array_create()
+# minds = replace_nums(minds)
+# print minds 
 
